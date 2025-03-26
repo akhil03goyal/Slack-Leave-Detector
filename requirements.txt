@@ -1,0 +1,4 @@
+spacy
+spacy[transformers]
+spacy-lookups-data
+psycopg2   
