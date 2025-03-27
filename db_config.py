@@ -1,11 +1,12 @@
 import psycopg2
+import os
 
 def get_db_connection():
     try:
         conn = psycopg2.connect(
             dbname="leave_tracker",
-            user="/////",
-            password="////",
+            user="akhilgoyal",
+            password=os.getenv("@Goyal03"),  # Use environment variables
             host="localhost",
             port="5432"
         )

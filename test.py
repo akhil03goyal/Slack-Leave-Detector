@@ -1,23 +1,34 @@
 import spacy
-import sys
+import argparse
+from date_preprocessor import resolve_date
 
 # Load trained model
 nlp = spacy.load("output_model")
 
-# Get message from command-line arguments
-if len(sys.argv) > 2 and sys.argv[1] == "--message":
-    message = sys.argv[2]
-else:
-    message = "I'll be on leave tomorrow and Friday"
+def process_message(message):
+    doc = nlp(message)
 
-# Process the message using the model
-doc = nlp(message)
+    # Print token-wise entities
+    print("\nEntities detected (Token-wise):")
+    for token in doc:
+        entity = token.ent_type_ if token.ent_type_ else "None"
+        print(f"Token: {token.text}, Entity: {entity}")
 
-print("\nEntities detected:")
-for token in doc:
-    print(f"Token: {token.text}, Entity: {token.ent_type_}")
+    # Extract named entities
+    entities = {ent.label_: ent.text for ent in doc.ents}
 
-# Print recognized named entities
-print("\nNamed Entities:")
-for ent in doc.ents:
-    print(f"{ent.label_}: {ent.text}")
+    print("\nNamed Entities (Span-based):")
+    for label, text in entities.items():
+        print(f"{label}: {text}")
+
+    # Resolve DATE entity
+    if "DATE" in entities:
+        resolved_date = resolve_date(entities["DATE"])
+        print(f"\nResolved DATE: {resolved_date}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--message", type=str, required=True, help="Message to process")
+    args = parser.parse_args()
+
+    process_message(args.message)

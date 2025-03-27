@@ -1,2 +1,30 @@
-[["I am taking a leave today.", {"entities": [[17, 22, "DATE"], [10, 15, "LEAVE_TYPE"]]}], ["I'll be on leave tomorrow and Friday", {"entities": [[11, 16, "LEAVE_TYPE"], [17, 25, "DATE"], [30, 36, "DATE"]]}], ["I'm taking a sick leave on Monday", {"entities": [[15, 25, "LEAVE_TYPE"], [29, 35, "DATE"]]}], ["I'll be on leave on 12 April", {"entities": [[11, 16, "LEAVE_TYPE"], [20, 28, "DATE"]]}],
-["I won't be available on June 5", {"entities": [[20, 26, "DATE"]]}], ["I am sick and won't be working.", {"entities": [[5, 9, "LEAVE_TYPE"]]}], ["On vacation tomorrow.", {"entities": [[3, 11, "LEAVE_TYPE"], [12, 20, "DATE"]]}], ["I have an emergency and can't come today.", {"entities": [[9, 18, "LEAVE_TYPE"], [31, 36, "DATE"]]}]]
+[
+    ["I am taking a leave today.", {"entities": [[20, 25, "DATE"]]}],
+    ["I'll be on leave tomorrow and Friday.", {"entities": [[17, 25, "DATE"], [30, 36, "DATE"]]}],
+    ["I'm taking a sick leave on Monday.", {"entities": [[13, 23, "LEAVE_TYPE"], [27, 33, "DATE"]]}],
+    ["I'll be on leave on 12 April.", {"entities": [[20, 28, "DATE"]]}],
+    ["I won't be available on June 5.", {"entities": [[24, 30, "DATE"]]}],
+    ["On vacation tomorrow.", {"entities": [[3, 11, "LEAVE_TYPE"], [12, 20, "DATE"]]}],
+    ["Taking PTO on Friday.", {"entities": [[7, 10, "LEAVE_TYPE"], [14, 20, "DATE"]]}],
+    ["I have a meeting today.", {"entities": [[17,22,"DATE"]]}],
+    ["I have an emergency and can't come today.", {"entities": [[10, 19, "LEAVE_TYPE"], [35, 40, "DATE"]]}],
+    ["I will be on emergency leave from April 2 to April 5.", {"entities": [[13, 22, "LEAVE_TYPE"], [34, 41, "DATE"], [45, 52, "DATE"]]}],
+    ["I need a vacation from 01-04-2025 to 10-04-2025.", {"entities": [[9, 17, "LEAVE_TYPE"], [23, 33, "DATE"], [37, 47, "DATE"]]}],
+    ["I'll be off next Friday.", {"entities": [[17, 23, "DATE"]]}],
+    ["I am not feeling well and taking a sick day.", {"entities": [[5, 21, "LEAVE_REASON"], [35, 39, "LEAVE_TYPE"]]}],
+    ["I have to take an emergency leave tomorrow.", {"entities": [[18, 33, "LEAVE_TYPE"], [34, 42, "DATE"]]}],
+    ["I'll be out of the office next Monday.", {"entities": [[31, 37, "DATE"]]}],
+    ["I'm planning to take a PTO on 15th March.", {"entities": [[23, 26, "LEAVE_TYPE"], [30, 40, "DATE"]]}],
+    ["I am taking a personal day tomorrow.", {"entities": [[14, 22, "LEAVE_TYPE"], [27, 35, "DATE"]]}],
+    ["Can you log my sick leave for next Wednesday?", {"entities": [[15, 25, "LEAVE_TYPE"], [30, 44, "DATE"]]}],
+    ["Hey team, I won't be in the office next Friday.", {"entities": [[35, 46, "DATE"]]}],
+    ["Let's discuss the project tomorrow.", {"entities": [[26, 34, "DATE"]]}],
+    ["I have an urgent client call on Monday.", {"entities": [[32, 38, "DATE"]]}],
+    ["Is anyone available for a meeting next Friday?", {"entities": [[34, 45, "DATE"]]}],
+    ["I'll be on leave next Wednesday.", {"entities": [[11, 16, "LEAVE_TYPE"], [17, 29, "DATE"]]}],
+    [
+        "I have a doctor's appointment on 5 June.",
+        {"entities": [[30, 36, "DATE"]]}
+    ]
+
+]

@@ -4,8 +4,8 @@ def get_db_connection():
     try:
         conn = psycopg2.connect(
             dbname="leave_tracker",
-            user="/////",
-            password="/////",
+            user="akhilgoyal",
+            password="@Goyal03",
             host="localhost",
             port="5432"  # Change if using a different port
         )
